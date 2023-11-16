@@ -29,8 +29,8 @@ int main(void)
 {
     int length;
     char str[length];
-
-    scanf("give me a word: %s", str);
+    printf("give me a word: %s", str);
+    scanf("%s", str);
 
     length = ft_strlen(str);
     printf("The word %s has %d letters\n", str, length);
