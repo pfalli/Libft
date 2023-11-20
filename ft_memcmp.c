@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 15:28:21 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/20 17:15:55 by pfalli           ###   ########.fr       */
+/*   Created: 2023/11/20 17:29:54 by pfalli            #+#    #+#             */
+/*   Updated: 2023/11/20 17:30:16 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
- /*the same of memcpy, copy or ask */
-
-void *memmove(void *dest, const void *src, size_t n)
+int memcmp(const void *str1, const void *str2, size_t n)
 {
 	
 }
