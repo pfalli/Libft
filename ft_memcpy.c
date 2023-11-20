@@ -1,41 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/13 16:46:47 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/20 15:06:20 by pfalli           ###   ########.fr       */
+/*   Created: 2023/11/20 14:49:16 by pfalli            #+#    #+#             */
+/*   Updated: 2023/11/20 16:54:09 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* the function copies n of characters from src to dest from 0 */
+/* memcpy doesnt care about overlapping memory blocks, instead of memmove */
+
 #include "libft.h"
 
-void	*ft_memset(void *memory, int c, int len)
+void *ft_memcpy(void *dest, const void *src, int n)
 {
-	int	i = 0;
-	unsigned char	*ptr;
+	int i = 0;
+	char *ptr_dest = (char *)dest;
+	char *ptr_src = (char *)src;
+	
+	
 
-	
-	ptr = (unsigned char *)memory;
-	
-	while (i < len)
+	while (i < n)
 	{
-		ptr[i++] = (unsigned char)c;
+		ptr_dest[i] = ptr_src[i];
+		i++;
 	}
-	return (memory);
+	return (dest);
 }
+
 
 #include <stdio.h>
 
 int	main(void)
 {
-	char memory[] = "Paperone";
+	char dest[] = "voglio essere romano";
+	char src[] = "pugliese";
 	
-	ft_memset(memory, '$', 5);
+	ft_memcpy (dest, src, 5);
 	
-	printf("Refilled string: %s\n", memory);
+	printf("Refilled string: %s\n", dest);
 
 	return (0);
 }
