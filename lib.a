@@ -1,5 +1,0 @@
-!<arch>
-
-ar -v -q lib.a strlen.o strcpy.o
-
-type that to create a library
