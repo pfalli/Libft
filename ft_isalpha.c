@@ -6,13 +6,16 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:43:34 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 16:20:01 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/22 17:15:35 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <unistd.h>
+
 int	ft_isalpha(char a)
 {
-	if (a > 64 && a < 91 || a > 96 && a < 123)
+	if ((a > 64 && a < 91) || (a > 96 && a < 123))
 	{
 		return (1);
 	}
@@ -21,9 +24,6 @@ int	ft_isalpha(char a)
 		return (0);
 	}
 }
-
-#include <stdio.h>
-#include <unistd.h>
 
 int	main(void)
 {

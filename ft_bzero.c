@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 16:05:43 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 16:19:51 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/22 17:12:50 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,27 +16,25 @@
 
 void	ft_bzero(void *str[], int n)
 {
-	int				i;
 	unsigned char	*ptr;
 
-	i = 0;
 	ptr = (unsigned char *)str;
-	while (i <= n)
+	while (n-- > 0)
 	{
-		ptr[i] = '0';
-		i++;
+		*ptr++ = '0';
 	}
 }
 
-#include <stdio.h>
-
-int	main(void)
-{
-	char memory[] = "Paperone";
-
-	ft_bzero(memory, 3);
-
-	printf("this is the result: %s\n", memory);
-
-	return (0);
-}
+// #include "libft.h"
+// #include <stdio.h>
+// 
+// int	main(void)
+// {
+// 	char memory[] = "Paperone";
+// 
+// 	ft_bzero(memory, 0); // it works also with 0
+// 
+// 	printf("this is the result: %s\n", memory);
+// 
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 12:26:39 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 16:19:38 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/22 17:12:21 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ int	atoi(const char *str)
 
 	res = 0;
 	negative = 1;
-	while (*str && (*str == ' ' || *str == '\n' || *str == '\t' || *str == '\v'
+	while (*str && (*str == ' ' || *str == '\n'
+			|| *str == '\t' || *str == '\v'
 			|| *str == '\f' || *str == '\r'))
 		++str;
 	if (*str == '-')

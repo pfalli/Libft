@@ -6,16 +6,17 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 13:21:58 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 15:22:27 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/22 17:07:41 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef libft.h
+#ifndef libft
 # define libft .h
 
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>
+#include <stddef.h>
 
 
 int	ft_isalpha(char a);

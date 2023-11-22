@@ -6,9 +6,12 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:18:20 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/13 13:34:56 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/22 17:16:39 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
+#include <unistd.h>
 
 int	ft_isdigit(int a)
 {
@@ -22,16 +25,11 @@ int	ft_isdigit(int a)
 	}
 }
 
-/*
-#include <stdio.h>
-#include <unistd.h>
-
 int	main(void)
 {
 	char	x;
 
 	x = '9';
-	
 	ft_isdigit(x);
 	printf("it's alphabet or not %c", x);
 	return (0);

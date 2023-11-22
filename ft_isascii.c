@@ -6,9 +6,12 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:41:03 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 16:20:05 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/22 17:18:33 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
+#include <unistd.h>
 
 int	ft_isascii(int a)
 {
@@ -22,20 +25,13 @@ int	ft_isascii(int a)
 	}
 }
 
-/*
-#include <stdio.h>
-#include <unistd.h>
-
 int	main(void)
 {
-	char x;
+	char	x;
 
 	printf("give me a digit:");
 	scanf("%c", &x);
-
 	ft_isascii(x);
-
 	printf("the digit is part of ASCII");
-
 	return (0);
 }
