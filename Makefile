@@ -1,26 +1,36 @@
-IDIR =../include
-CC=gcc
-CFLAGS=-I$(IDIR)
+NAME =	libft.a
+SRC	=	$(addsuffix .c, main ft_calloc ft_strdup ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_strlen ft_memset ft_bzero ft_memcpy ft_memmove ft_strlcpy ft_strlcat ft_toupper ft_tolower ft_strchr ft_strrchr ft_strncmp ft_memchr ft_memcmp ft_strnstr ft_atoi)
+OBJS :=	$(SRC:%.c=%.o) #per each .c file will create a .o file
 
-ODIR=obj
-LDIR =../lib
+CC=	gcc	#variable containing the compailer
 
-LIBS=-lm
+CCFLAGS	=	-Wall -Werror -Wextra #compiler flags
 
-_DEPS = libft.h
-DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
+INC_DIR	=	. # to include a header file
 
-_OBJ = ft_*c
-OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
+CPPFLAGS =-I$(INC_DIR)
 
+RM =	rm -f #alias
 
-$(ODIR)/%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+ARNAME =	ar rcs $(NAME) #alias
 
-libft.a: $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+RANNAME =	ranlib $(NAME) #alias
 
-.PHONY: clean
+all: libft.a
+
+$(NAME): $(OBJS)
+	$(ARNAME)
+	$(RANNAME)
+
+%.o: %.c
+	$(CC) $(CPPFLAGS) $(CCFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~
+	$(RM) $(OBJS)
+
+fclean: clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re 

@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:29:54 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/21 12:17:14 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/22 16:20:21 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,15 @@
 
 #include "libft.h"
 
-int ft_memcmp(const void *str1, const void *str2, int n)
+int	ft_memcmp(const void *str1, const void *str2, int n)
 {
-	const char *ptr1 = str1;
-	const char *ptr2 = str2;
-	int x = 0;
-	int ret;
+	const char	*ptr1 = str1;
+	const char	*ptr2 = str2;
+	int			x;
+	int			ret;
 
-	while ( n > 0 && (*ptr1 || *ptr2))
+	x = 0;
+	while (n > 0 && (*ptr1 || *ptr2))
 	{
 		if (*ptr1 != *ptr2)
 		{
@@ -36,7 +37,7 @@ int ft_memcmp(const void *str1, const void *str2, int n)
 
 #include <stdio.h>
 
-int main()
+int	main(void)
 {
 	const char *str1 = "Bellissima";
 	const char *str2 = "Bellissima";
@@ -48,7 +49,7 @@ int main()
 	{
 		printf("str1 is bigger than str2");
 	}
-	else if(ret < 0)
+	else if (ret < 0)
 	{
 		printf("str1 is less than str2");
 	}
@@ -56,5 +57,5 @@ int main()
 	{
 		printf("strs are the same");
 	}
-	return(0);
+	return (0);
 }

@@ -6,11 +6,11 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:53:07 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/13 15:24:24 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/22 16:20:13 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint (int a)
+int	ft_isprint(int a)
 {
 	if (a > 32 && a < 127)
 	{

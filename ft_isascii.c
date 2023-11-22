@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:41:03 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/13 15:20:55 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/22 16:20:05 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	ft_isascii(int a)
 		return (0);
 	}
 }
-
 
 /*
 #include <stdio.h>

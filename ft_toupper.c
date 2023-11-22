@@ -6,22 +6,21 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 16:05:54 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/21 17:32:16 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/22 16:21:21 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper (int letter)
+int	ft_toupper(int letter)
 {
-	int  x = 0;
+	int x = 0;
 
 	if (letter >= 'a' && letter <= 'z')
 	{
 		letter - 32;
-		return(letter);
+		return (letter);
 	}
 	else
 	{
-		return(0);
+		return (0);
 	}
-
 }
