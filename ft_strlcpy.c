@@ -6,19 +6,19 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:24:18 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:46:22 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 18:01:17 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // the function returns the length of the source
-// EVOLUTION OF OLD strcpy avoids buffer overruns and ensures 
-//that the output string is null terminated.
+// EVOLUTION OF OLD strcpy avoids buffer overruns and ensures
+// that the output string is null terminated.
 
 #include "libft.h"
 
 size_t	*ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	int	len;
+	size_t	len;
 
 	len = 0;
 	if (src == 0 || dst == 0)

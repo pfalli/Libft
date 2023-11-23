@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:41:03 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:45:46 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 17:18:25 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,14 @@ int	ft_isascii(int a)
 	}
 }
 
-int	main(void)
-{
-	char	x;
-
-	printf("give me a digit:");
-	scanf("%c", &x);
-	ft_isascii(x);
-	printf("the digit is part of ASCII");
-	return (0);
-}
+//	int	main(void)
+//	{
+//		char	x;
+//	
+//		printf("give me a digit:");
+//		scanf("%c", &x);
+//		ft_isascii(x);
+//		printf("the digit is part of ASCII");
+//		return (0);
+//	}
+//	

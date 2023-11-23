@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:43:34 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:45:43 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 17:12:46 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,13 @@ int	ft_isalpha(char a)
 	}
 }
 
-int	main(void)
-{
-	char	x;
-
-	x = 94;
-	ft_isalpha(x);
-	printf("it's alphabet or not %c", x);
-	return (0);
-}
+//	int	main(void)
+//	{
+//		char	x;
+//	
+//		x = 94;
+//		ft_isalpha(x);
+//		printf("it's alphabet or not %c", x);
+//		return (0);
+//	}
+//	

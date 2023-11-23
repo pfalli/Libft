@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:29:54 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:45:59 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 17:06:28 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_memcmp(const void *str1, const void *str2, int n)
 	const char	*ptr1 = str1;
 	const char	*ptr2 = str2;
 	int			x;
-	int			ret;
 
 	x = 0;
 	while (n > 0 && (*ptr1 || *ptr2))

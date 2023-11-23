@@ -10,17 +10,17 @@ SRC	=	$(addsuffix .c, \
 				 ft_memset \
 				 ft_bzero \
 				 ft_memcpy \
-				 \
-				 \
+				 ft_strlen \
+				 ft_strlcpy \
 				 ft_strlcat \
-				 \
-				 \
-				 ft\
+				 ft_memmove \
+				 ft_memchr \
+				 ft_strnstr \
 				 ft_strrchr \
 				 ft_strncmp \
-				 ft_memcmp\
-				 ft_tolower.c\
-				 ft_toupper.c\
+				 ft_memcmp \
+				 ft_tolower \
+				 ft_toupper \
 				 ft_atoi)
 
 OBJS :=	$(SRC:%.c=%.o) #per each .c file will create a .o file
@@ -37,8 +37,8 @@ RM =	rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJS) libft.h
-	ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJS)
+	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME) 
 
 %.o: %.c

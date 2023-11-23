@@ -6,24 +6,15 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 16:05:51 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:46:39 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 17:16:50 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int letter)
+int	ft_tolower(int c)
 {
-	int	x;
-
-	x = 0;
-	if (letter >= 'A' && letter <= 'Z')
-	{
-		letter + 32;
-		return (letter);
-	}
-	else
-	{
-		return (0);
-	}
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
 }

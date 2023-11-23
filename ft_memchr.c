@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:10:53 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:45:56 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 17:23:56 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ void	*ft_memchr(const void *memory, int print, int n)
 		}
 		x++;
 	}
-	return (memory);
+	return (ptr);
 }

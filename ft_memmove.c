@@ -6,12 +6,12 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:28:21 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:46:06 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 17:21:53 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*the same of memcpy, copy or ask */
+// the same of memcpy, copy or ask 
 
 void	*ft_memmove(void *dest, const void *src, int n)
 {
@@ -24,7 +24,7 @@ void	*ft_memmove(void *dest, const void *src, int n)
 	{
 		ptr[i++] = (unsigned char)src;
 	}
-	return (ptr);
+	return (src);
 }
 
 //
