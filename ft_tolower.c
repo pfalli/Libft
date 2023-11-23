@@ -6,9 +6,11 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 16:05:51 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 16:21:18 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 14:46:39 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int letter)
 {

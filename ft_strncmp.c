@@ -6,11 +6,14 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:57:38 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 16:21:07 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 14:46:29 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// it works with numbers because the letters are counted in numbers in the ASCII table
+// it works with numbers because the letters
+// are counted in numbers in the ASCII table
+
+#include "libft.h"
 
 int	ft_strncmp(char *s1, char *s2, int n)
 {

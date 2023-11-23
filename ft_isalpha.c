@@ -6,12 +6,11 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:43:34 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 17:15:35 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 14:45:43 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isalpha(char a)
 {

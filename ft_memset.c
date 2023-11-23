@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:46:47 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 16:20:42 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 11:33:47 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,16 @@ void	*ft_memset(void *memory, int c, int len)
 	return (memory);
 }
 
-#include <stdio.h>
-
-int	main(void)
-{
-	char memory[] = "Paperone";
-
-	ft_memset(memory, '$', 5);
-
-	printf("Refilled string: %s\n", memory);
-
-	return (0);
-}
+//
+//#include <stdio.h>
+//
+//int	main(void)
+//{
+//	char memory[] = "Paperone";
+//
+//	ft_memset(memory, '$', 5);
+//
+//	printf("Refilled string: %s\n", memory);
+//
+//	return (0);
+//}

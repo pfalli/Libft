@@ -6,11 +6,13 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:10:53 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 17:28:38 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 14:45:56 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* it copy one letter to a chosen byte of dest string */
+
+#include "libft.h"
 
 void	*ft_memchr(const void *memory, int print, int n)
 {

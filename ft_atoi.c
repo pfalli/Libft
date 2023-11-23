@@ -6,9 +6,11 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 12:26:39 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 17:12:21 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 14:45:18 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	atoi(const char *str)
 {

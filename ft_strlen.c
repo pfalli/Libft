@@ -6,9 +6,11 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 15:25:08 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 16:21:03 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 14:46:25 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(const char *str)
 {

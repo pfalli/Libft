@@ -6,12 +6,11 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:18:20 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 17:16:39 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 14:45:48 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isdigit(int a)
 {

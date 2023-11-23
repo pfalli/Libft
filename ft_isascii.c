@@ -6,12 +6,11 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:41:03 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/22 17:18:33 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/23 14:45:46 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isascii(int a)
 {
