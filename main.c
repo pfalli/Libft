@@ -6,23 +6,23 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 13:18:24 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 12:41:19 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:31:16 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
-
-int	main(void)
-{
-	const char	*str = "pizza&pasta";
-	int			length;
-
-	length = ft_strlen(str);
-	printf("Length of the string: %d\n", length);
-	return (0);
-}
+//	
+//	int	main(void)
+//	{
+//		const char	*str = "pizza&pasta";
+//		int			length;
+//	
+//		length = ft_strlen(str);
+//		printf("Length of the string: %d\n", length);
+//		return (0);
+//	}
 
 // int	main(void)
 // {

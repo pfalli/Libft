@@ -1,37 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 17:10:53 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/24 13:35:56 by pfalli           ###   ########.fr       */
+/*   Created: 2023/11/24 17:42:40 by pfalli            #+#    #+#             */
+/*   Updated: 2023/11/24 18:14:50 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* it copy one letter to a chosen byte of dest string */
-
 #include "libft.h"
 
-void	*ft_memchr(const void *memory, int print, int n)
+char	*ft_strdup(const char *s1)
 {
-	int				x;
-	unsigned char	*ptr;
+	char	*arr;
+	size_t	len_s1;
 
-	x = 0;
-	ptr = (unsigned char *)memory;
-	if (print == 0)
-	{
+	len_s1 = ft_strlen(s1) + 1; // calculate the length of the string
+	arr = malloc(len_s1);       // allocate memory exacrtly for the string
+	if (s1 == 0)
 		return (0);
-	}
-	while (x < +n)
-	{
-		if (x == n)
-		{
-			ptr[x] = print;
-		}
-		x++;
-	}
-	return (ptr);
+	ft_memcpy(arr, s1, len_s1);
+	return (arr);
 }

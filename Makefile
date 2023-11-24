@@ -21,7 +21,9 @@ SRC	=	$(addsuffix .c, \
 				 ft_memcmp \
 				 ft_tolower \
 				 ft_toupper \
-				 ft_atoi)
+				 ft_atoi \
+				 ft_calloc \
+				 ft_strdup)
 
 OBJS :=	$(SRC:%.c=%.o) #per each .c file will create a .o file
 
@@ -38,7 +40,7 @@ RM =	rm -f
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rc $(NAME) $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 	ranlib $(NAME) 
 
 %.o: %.c

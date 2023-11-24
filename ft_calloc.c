@@ -1,37 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 17:10:53 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/24 13:35:56 by pfalli           ###   ########.fr       */
+/*   Created: 2023/11/24 12:53:34 by pfalli            #+#    #+#             */
+/*   Updated: 2023/11/24 18:15:03 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* it copy one letter to a chosen byte of dest string */
-
 #include "libft.h"
 
-void	*ft_memchr(const void *memory, int print, int n)
+void	*ft_calloc(size_t count, size_t size)
 {
-	int				x;
-	unsigned char	*ptr;
+	size_t	total_size;
+	int		*arr;
+	size_t	i;
 
-	x = 0;
-	ptr = (unsigned char *)memory;
-	if (print == 0)
+	total_size = count * size;
+	i = 0;
+	arr = (int *)malloc(total_size); // to allocate memory
+	if (arr == 0)
 	{
 		return (0);
 	}
-	while (x < +n)
+	while (i < total_size)
 	{
-		if (x == n)
-		{
-			ptr[x] = print;
-		}
-		x++;
+		((char *)arr)[i] = 0;
+		i++;
 	}
-	return (ptr);
+	return (arr); // return a pointer to the allocated memory
 }
