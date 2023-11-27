@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:13:10 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:46:14 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/27 18:42:49 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,39 +20,43 @@
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	while (str != '\0')
+	char	find;
+	int		i;
+
+	find = (unsigned char)c;
+	i = 0;
+	while (s[i] != 0)
 	{
-		if (str == c)
-		{
-			return ((char *)str);
-		}
-		str++;
+		if (s[i] == find)
+			return ((char *)&s[i]);
+		i++;
 	}
+	if (s[i] == find)
+		return ((char *)&s[i]);
 	return (0);
 }
 
-//	
 //	int	main(void)
 //	{
-//		int		c;
-//	    const char *x = "voglio il pallone";
-//		char	*result;
+//		int			c;
+//		const char	*x = "voglio il pallone";
+//		char		*result;
 //	
-//	    c = 'p';
-//	    result = ft_strchr(x, c);
-//	    if(result = c)
-//	    {
-//	        printf("yes there is the same letter");
-//	    }
-//	    else
-//	    {
-//	        printf("there is not")
-//	    }
-//	    return (0)
+//		c = 'p';
+//		result = ft_strchr(x, c);
+//		if (result != 0)
+//		{
+//			printf("yes there is the same letter");
+//		}
+//		else
+//		{
+//			printf("there is not");
+//		}
+//		return (0);
 //	}
-
+//	
 // In C, arrays and pointers are closely related
 // When you use an array name in most expressions,
 // it is automatically converted to a pointer to
@@ -60,6 +64,6 @@ char	*ft_strchr(const char *str, int c)
 
 // const char *str = "Hello";
 
-// In this example, str is a pointer to the first 
+// In this example, str is a pointer to the first
 // character of the string "Hello."
 //  if i do str++, str is pointing now to "e" and so on...

@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 13:21:58 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/24 18:13:52 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/27 14:46:37 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,6 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
-
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}					t_list;
 
 int					ft_atoi(const char *str);
 void				ft_bzero(void *str[], int n);
@@ -48,5 +42,8 @@ int					ft_tolower(int letter);
 int					ft_toupper(int letter);
 void				*ft_calloc(size_t count, size_t size);
 char				*ft_strdup(const char *s1);
+
+char				*ft_substr(char const *s, unsigned int start, size_t len);
+char 				*ft_strjoin(char const *s1, char const *s2);
 
 #endif

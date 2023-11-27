@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 16:26:35 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:46:36 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/27 18:23:03 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strrchr(const char *str, int c)
 	int	len;
 
 	len = 0;
-	while (str[len] != '\0')
+	while (str[len] != 0)
 	{
 		len++;
 	}

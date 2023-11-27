@@ -23,7 +23,10 @@ SRC	=	$(addsuffix .c, \
 				 ft_toupper \
 				 ft_atoi \
 				 ft_calloc \
-				 ft_strdup)
+				 ft_strdup \
+				 ft_substr \
+				 ft_strjoin \
+				 )			 
 
 OBJS :=	$(SRC:%.c=%.o) #per each .c file will create a .o file
 
