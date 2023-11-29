@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:24:18 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/24 12:22:24 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/28 15:11:45 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,38 @@
 
 #include "libft.h"
 
+//	int	ft_strlen(const char *str)
+//	{
+//		int	x;
+//
+//		x = 0;
+//		while (str[x] != '\0')
+//		{
+//			x++;
+//		}
+//		return (x);
+//	}
+//
+
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	src_len;
+	size_t	i;
 
 	src_len = ft_strlen(src);
-	if (src == 0 || dst == 0)
-		return (0);
-	while (src_len < size - 1 && src[src_len] != '\0')
+	if (src == NULL || dst == NULL || size == 0)
 	{
-		dst[src_len] = src[src_len];
-		src_len++;
+		return (src_len);
 	}
-	dst[src_len] = '\0';
-	while (src[src_len] != '\0')
-		src_len++;
+	i = 0;
+	while (i < size - 1 && src[i] != '\0')
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	if (size > 0)
+		dst[i] = '\0';
+	else
+		dst[size - 1] = '\0';
 	return (src_len);
 }

@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:29:54 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 17:06:28 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/28 18:37:04 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,43 +16,43 @@
 
 int	ft_memcmp(const void *str1, const void *str2, int n)
 {
-	const char	*ptr1 = str1;
-	const char	*ptr2 = str2;
-	int			x;
+	unsigned char	*ptr1;
+	unsigned char	*ptr2;
+	int			i;
 
-	x = 0;
-	while (n > 0 && (*ptr1 || *ptr2))
+	ptr1 = (unsigned char *)str1;
+	ptr2 = (unsigned char *)str2;
+	i = 0;
+	while (n > i)
 	{
-		if (*ptr1 != *ptr2)
+		if ((unsigned char)ptr1[i] != (unsigned char)ptr2[i])
 		{
-			return (*ptr1 - *ptr2);
+			return (int)(ptr1[i] - ptr2[i]); // return the negative with (int)
 		}
-		ptr1++;
-		ptr2++;
-		n--;
+		i++;
 	}
 	return (0);
 }
 
-//int	main(void)
-//{
-//	const char	*str1 = "Bellissima";
-//	const char	*str2 = "Bellissima";
-//	int	ret;
-//
-//	ret = ft_memcmp(str1, str2, 7);
-//	if (ret > 0)
+//	int	main(void)
 //	{
-//		printf("str1 is bigger than str2");
+//		const char	*str1 = "testss";
+//		const char	*str2 = "test";
+//		int	ret;
+//	
+//		ret = ft_memcmp(str1, str2, 5);
+//		if (ret > 0)
+//		{
+//			printf("str1 is bigger than str2");
+//		}
+//		else if (ret < 0)
+//		{
+//			printf("str1 is less than str2");
+//		}
+//		else
+//		{
+//			printf("strings are the same");
+//		}
+//		return (0);
 //	}
-//	else if (ret < 0)
-//	{
-//		printf("str1 is less than str2");
-//	}
-//	else
-//	{
-//		printf("strs are the same");
-//	}
-//	return (0);
-//}
-//
+//	

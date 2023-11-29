@@ -1,45 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 17:10:53 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/28 17:43:30 by pfalli           ###   ########.fr       */
+/*   Created: 2023/11/29 11:14:56 by pfalli            #+#    #+#             */
+/*   Updated: 2023/11/29 13:35:12 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* it copy one letter to a chosen byte of dest string */
+// the function split the array of words putting in the middle a (char c)
 
 #include "libft.h"
 
-void	*ft_memchr(const void *memory, int print, size_t n)
+char *nwords (char const *s, char c)
 {
-	size_t				x;
-	unsigned char	*ptr;
-	unsigned char	pls;
+	int word = 0;
+	int i = 0;
+	int *j = 0;
+	char *arr;
 
-	x = 0;
-	ptr = (unsigned char *)memory;
-	pls = (unsigned char) print;
-	while (x < n)
+	while ( c && arr[i] != 0)
 	{
-		if (ptr[x] == pls)
+		while ( c && arr[i[j]] != 0)
 		{
-			return (ptr + x);
+			
 		}
-		x++;
 	}
-	return (NULL); 
+}
+
+void ft_free()
+{
+	
+}
+
+char *copy()
+{
+	
 }
 
 
-//	int main()
-//	{
-//		char * str;
-//		
-//		str = ft_memchr("bonjour", 'r', 3);
-//		
-//		printf("result: %s\n", str);
-//	}
+char **ft_split(char const *s, char c)
+{
+	char *arr;
+
+	arr = ()
+}

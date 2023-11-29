@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:53:07 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:45:52 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/28 10:52:20 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isprint(int a)
 {
-	if (a > 32 && a < 127)
+	if (a >= 32 && a <= 126) // even space 32 is printable
 	{
 		return (1);
 	}
