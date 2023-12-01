@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/24 18:18:43 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/01 12:07:59 by pfalli           ###   ########.fr       */
+/*   Created: 2023/12/01 16:33:14 by pfalli            #+#    #+#             */
+/*   Updated: 2023/12/01 18:38:06 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,42 +24,42 @@
 //		return (x);
 //	}
 //	
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+//	char increment(unsigned int index, char c)
+//	{
+//		  if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+//	        return c + 1;
+//	    }
+//	    return c;
+//	}
+
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*arr;
-	size_t	len_s;
-	size_t	i;
-	char *s2;
+	size_t i = 0;
+	
+	size_t length = ft_strlen(s);
 
-	i = 0;
-	s2 = (char *) s;
-	len_s = ft_strlen(s);
-	arr = (char *) malloc(len +1);
-	if (start >= len_s)
-		return (0);
-	else if (start + len == len_s)
-		return (0);
-	else
+	char *ptr = malloc(length +1);
+	if (!ptr)
+        return (NULL);
+	while (length > i)
 	{
-		while (start < len)
-		{
-			arr[i] = s2[start + i];
-			i++;
-		}
-		return (arr);
+		ptr[i] = (*f)(i, s[i]);
+		i++;
 	}
+	ptr[i] = 0;
+	return (ptr);
 }
-
-
-
+	
+	
 //	int main()
 //	{
-//		char a[]= "tu vuoi fare l'americano";
-//	
-//		ft_substr(a, 14, 21);
-//	
-//		printf("%s\n", a);
+//		char *arr = "hola";
 //		
-//	
+//		
+//		char *str = ft_strmapi(arr, increment);
+//		printf( "%s", str);
+//		return (0);
 //	}
-//		
+	
+	
+	

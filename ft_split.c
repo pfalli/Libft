@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 11:14:56 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/29 17:06:53 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/11/30 14:56:11 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include "libft.h"
 
-char *nwords (char const *s, char c)
+char *countwords (char const *s, char c)
 {
 	int count = 0;
 	int x = 0;
@@ -33,17 +33,15 @@ char *nwords (char const *s, char c)
 	return (count);
 }
 
-void ft_free(void *ptr)
+void free(void *ptr)
 {
 	if(ptr != NULL)
 		free(ptr);
 }
 
-char *copyword(char *str, )
+char *copyword(char *str, char c)
 {
-	char *word;
-
-	word = malloc
+	
 }
 
 
