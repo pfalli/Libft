@@ -29,6 +29,11 @@ SRC	=	$(addsuffix .c, \
 				 ft_strtrim \
 				 ft_itoa \
 				 ft_strmapi \
+				 ft_striteri \
+				 ft_putchar_fd \
+				 ft_putstr_fd \
+				 ft_putendl_fd \
+				 ft_putnbr_fd \
 				 )			 
 
 OBJS :=	$(SRC:%.c=%.o) #per each .c file will create a .o file
