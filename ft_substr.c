@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:18:43 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/05 15:57:51 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/05 16:57:54 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,37 +30,37 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*arr;
 	size_t	len_s;
 	size_t	i;
-	char *s2;
 
+	if (s == NULL)
+		return NULL;
 	i = 0;
-	s2 = (char *) s;
 	len_s = ft_strlen(s);
-	arr = (char *) ft_malloc(len +1);
 	if (start >= len_s)
 		return (0);
-	else if (start + len == len_s)
+	if (start + len == len_s)
 		return (0);
-	else
-	{
-		while (start < len)
+	if (start + len > len_s)
+        len = len_s - start;
+	arr = (char *)malloc(len + 1);
+	if (arr == NULL)
+		return NULL;
+	while (i < len) 
 		{
-			arr[i] = s2[start + i];
+			arr[i] = s[start +i];
 			i++;
 		}
+		arr[i] = 0;
 		return (arr);
-	}
 }
-
 
 
 //	int main()
 //	{
 //		char a[]= "tu vuoi fare l'americano";
 //	
-//		ft_substr(a, 14, 21);
+//		ft_substr(a, 2, 6);
 //	
 //		printf("%s\n", a);
-//		
-//	
+//		return (0);
 //	}
 //		
