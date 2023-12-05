@@ -6,24 +6,25 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:18:43 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/01 12:07:59 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/05 15:57:51 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//	int	ft_strlen(const char *str)
-//	{
-//		int	x;
-//	
-//		x = 0;
-//		while (str[x] != '\0')
-//		{
-//			x++;
-//		}
-//		return (x);
-//	}
-//	
+int	ft_strlen(const char *str)
+{
+	int	x;
+
+	x = 0;
+	while (str[x] != '\0')
+	{
+		x++;
+	}
+	return (x);
+}
+
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*arr;
@@ -34,7 +35,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	s2 = (char *) s;
 	len_s = ft_strlen(s);
-	arr = (char *) malloc(len +1);
+	arr = (char *) ft_malloc(len +1);
 	if (start >= len_s)
 		return (0);
 	else if (start + len == len_s)

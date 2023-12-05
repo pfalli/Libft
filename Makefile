@@ -34,6 +34,7 @@ SRC	=	$(addsuffix .c, \
 				 ft_putstr_fd \
 				 ft_putendl_fd \
 				 ft_putnbr_fd \
+				 ft_split \
 				 )			 
 
 OBJS :=	$(SRC:%.c=%.o) #per each .c file will create a .o file
