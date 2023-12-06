@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 14:49:16 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 14:46:02 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/06 16:19:50 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, int n)
 	char	*ptr_dest;
 	char	*ptr_src;
 
+	if (dest == NULL && src == NULL) //&&&&
+		return (NULL);
 	i = 0;
 	ptr_dest = (char *)dest;
 	ptr_src = (char *)src;
@@ -32,15 +34,15 @@ void	*ft_memcpy(void *dest, const void *src, int n)
 	return (dest);
 }
 
-//
-//int	main(void)
-//{
-//	char	dest[] = "voglio essere romano";
-//	char	src[] = "pugliese";
-//
-//	ft_memcpy(dest, src, 5);
-//
-//	printf("Refilled string: %s\n", dest);
-//
-//	return (0);
-//}
+
+//	int	main(void)
+//	{
+//		// char	dest[] = "\0";
+//		// char	src[] = "\0";
+//	
+//		// ft_memcpy(dest, src, 5);
+//	
+//		printf("Refilled string: %s\n", ft_memcpy(((void *)0), ((void *)0), 3));
+//	
+//		return (0);
+//	}

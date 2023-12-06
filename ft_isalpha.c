@@ -6,15 +6,15 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:43:34 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/05 17:00:55 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/06 16:22:31 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char a)
+int	ft_isalpha(int a)
 {
-	if ((a > 64 && a < 91) || (a > 96 && a < 123))
+	if ((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z'))
 	{
 		return (1);
 	}

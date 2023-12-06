@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 13:21:58 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/05 14:00:34 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/06 16:22:50 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 int		ft_atoi(const char *str);
 void	ft_bzero(void *str, size_t n);
 int		ft_isalnum(int a);
-int		ft_isalpha(char a);
+int		ft_isalpha(int a);
 int		ft_isascii(int a);
 int		ft_isdigit(int a);
 int		ft_isprint(int a);
@@ -30,6 +30,7 @@ void	*ft_memchr(const void *memory, int print, size_t n);
 int		ft_memcmp(const void *str1, const void *str2, int n);
 void	*ft_memcpy(void *dest, const void *src, int n);
 void	*ft_memset(void *memory, int c, int len);
+void	*ft_memmove(void *dst, const void *src, size_t len);
 char	*ft_strchr(const char *str, int c);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);

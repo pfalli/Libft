@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 17:42:40 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/27 17:48:45 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/06 16:28:43 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ char	*ft_strdup(const char *s1)
 
 	len_s1 = ft_strlen(s1) + 1; // calculate the length of the string
 	arr = malloc(len_s1);       // allocate memory exactly for the string
-	if (s1 == 0)
-		return (0);
+	if (arr == NULL)
+		return (NULL); // check for allocation failed
 	ft_memcpy(arr, s1, len_s1);
 	return (arr);
 }

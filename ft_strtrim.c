@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 14:48:20 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/29 11:14:38 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/06 16:06:04 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,17 +48,21 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start;
 	size_t	end;
 
+	if (s1 == NULL || set == NULL)
+		return (NULL);
 	i = 0;
 	start = 0;
 	end = ft_strlen(s1);
 	// calculate start
 	while (s1[start] && findset(s1[start], set))
 		start++;
+	if (s1[start] == '\0')
+		return (ft_strdup(""));
 	// calculate end
 	while (end > start && findset(s1[end - 1], set)) // - 1 bc of the ending \0
 		end--;
 
-	arr = (char *)malloc(sizeof(s1) * (end - start + 1)); // allocate
+	arr = (char *)malloc((end - start + 1)); // allocate
 
 	if (!arr)
 		return (NULL);
@@ -71,7 +75,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 //	int	main(void)
 //	{
-//		char *a = "$^&potter$^&";
+//		char *a = "$^&";
 //		char *set = "$^&";
 //		ft_strtrim(a, set);
 //	

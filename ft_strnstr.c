@@ -6,11 +6,14 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:48:06 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/04 15:51:28 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/06 17:59:02 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // locate a substring in a big string
+
+// Remember, causing intentional segmentation faults is not good practice in actual programming. 
+//Always ensure that your code handles NULL pointers appropriately to prevent segmentation faults and undefined behavior.
 
 #include "libft.h"
 
@@ -25,12 +28,14 @@
 //		}
 //		return (x);
 //	}
-//	
+
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	little_len;
 	size_t	x;
 
+	if (big == NULL && little == NULL)
+		return NULL;
 	x = 0;
 	little_len = ft_strlen(little);
 	if (*little == '\0')
@@ -58,7 +63,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
-// Test function for ft_strnstr
+//	// Test function for ft_strnstr
 //	void test_ft_strnstr(const char *big, const char *little, size_t len) {
 //	    char *result = ft_strnstr(big, little, len);
 //	    if (result != NULL) {
@@ -71,14 +76,14 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 //	int main() {
 //	    const char *str = "lorem ipsum dolor sit amet";
 //	    const char *substring1 = "amet";
-//	    const char *substring2 = "ipsumm"; ///////
+//	    const char *substring2 = "\0"; ///////
 //	    const char *substring3 = "";
 //	
 //	    printf("String: '%s'\n", str);
 //	    
-//	    test_ft_strnstr(str, substring1, 30);  // Searching for "test" within the first 30 characters
-//	    test_ft_strnstr(str, substring2, 30);  // Searching for "world" within the first 30 characters
-//	    test_ft_strnstr(str, substring3, 30);  // Searching for "substring search" within the first 30 characters
+//	    test_ft_strnstr(str, substring1, 30);  
+//	    test_ft_strnstr(str, substring2, 30);  
+//	    test_ft_strnstr(str, substring3, 30);  
 //	
 //	    return 0;
 //	}
