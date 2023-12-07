@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 10:22:18 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/07 15:49:12 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 15:54:31 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,90 +30,65 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-char *printing_char(int length, char *ptr, int nbr)
+static int	ft_get_int_len(int n)
 {
-    int i = length - 1;
+	int	len;
 
-    ptr[length] = '\0'; 
-
-    while (i >= 0) 
+	len = 0;
+	if (n <= 0)
+		len++;
+	while (n != 0)
 	{
-        if (nbr < 0) 
-		{
-            ptr[0] = '-';
-            nbr = -nbr;
-        }
-        ptr[i--] = (char)(nbr % 10 + '0');
-        nbr = nbr / 10;
-
-        if (nbr == 0)
-            break;
-    }
-
-    return ptr;
-}
-
-int	ft_length(long int number)
-{
-	int	count;
-
-	count = 0;
-	if (number < 0)
-	{
-		number = -number;
-		count++;
+		n /= 10;
+		len++;
 	}
-	while (number != 0)
-	{
-		count++;
-		number = number / 10;
-	}
-    if (count == 0)
-        count = 1;
-	return (count);
+	return (len);
 }
-
 
 char	*ft_itoa(int n)
 {
-	int		length;
-	int		negative;
-	char	*ptr;
-    long	nbr;
-	
-	if (n == -2147483648)
-		ft_putstr_fd("-2147483648", 1);
-	nbr = n;
-	length = ft_length(nbr);
-	negative = 0;
-	if (nbr < 0)
-		negative = 1;
-	ptr = (char *)malloc((length + 1) * sizeof(char));
-	if (ptr == NULL)
-		return (NULL);
-	ptr[length] = '\0';
-	
-	printing_char(length, ptr, nbr);
-	return (ptr);
-}
+	char	*str;
+	int		len;
+	int		sign;
 
-int	main()
-{
-	int		n;
-	char	*res;
-
-	n = -2147483648;
-
-	res = ft_itoa(n);
-	if (res != NULL)
-	{
-		printf("%s\n", res);
-		free(res);
-	}
+	len = ft_get_int_len(n);
+	if (n < 0)
+		sign = -1;
 	else
+		sign = 1;
+	str = (char *)malloc((len + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
+	str[len] = '\0';
+	if (n == 0)
+		str[0] = '0';
+	while (n != 0)
 	{
-		printf("Memory allocation failed.\n");
+		str[--len] = '0' + (n % 10) * sign;
+		n /= 10;
 	}
-	return (0);
+	if (sign == -1)
+		str[0] = '-';
+	return (str);
 }
+
+//	int	main()
+//	{
+//		int		n;
+//		char	*res;
+//	
+//		n = -2147483648LL;
+//	
+//		res = ft_itoa(n);
+//		if (res != NULL)
+//		{
+//			printf("%s\n", res);
+//			free(res);
+//		}
+//		else
+//		{
+//			printf("Memory allocation failed.\n");
+//		}
+//		return (0);
+//	}
+//	

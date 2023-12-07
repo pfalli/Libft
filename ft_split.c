@@ -6,13 +6,57 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 11:14:56 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/07 10:38:59 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 16:30:37 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // the function split the array of words putting in the middle (char c)
 
 #include "libft.h"
+
+char *process(char const *s, char c, char **split)
+{
+	int			i;
+	int			lenword;
+	int			count;
+	const char	*start;
+	int			j;
+	char		**split;
+
+	i = 0;
+	start = s;
+	while (*s)
+	{
+		if (*s != c)
+		{
+			start = s;
+			while (*s && *s != c)
+				s++;
+			lenword = s - start;
+			split[i] = (char *)malloc((lenword + 1) * sizeof(char));
+			if (split[i] == NULL)
+			{
+				ft_free(split, i);
+				return (NULL);
+			}
+			j = 0;
+			while (start < s)
+			{
+				split[i][j] = *start;
+				j++;
+				start++;
+			}
+			split[i][j] = 0;
+			i++;
+		}
+		else
+		{
+			s++;
+		}
+		return
+	}
+	return ()
+}
 
 int	countwords(char const *s, char c)
 {
@@ -71,9 +115,7 @@ char	**ft_split(char const *s, char c)
 		{
 			start = s;
 			while (*s && *s != c)
-			{
 				s++;
-			}
 			lenword = s - start;
 			split[i] = (char *)malloc((lenword + 1) * sizeof(char));
 			if (split[i] == NULL)
@@ -92,9 +134,7 @@ char	**ft_split(char const *s, char c)
 			i++;
 		}
 		else
-		{
 			s++;
-		}
 	}
 	split[i] = NULL;
 	return (split);

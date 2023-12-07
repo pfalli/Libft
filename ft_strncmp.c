@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:57:38 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/07 10:41:14 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 16:14:08 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,7 @@ int	ft_strncmp(char *s1, char *s2, int n)
 		while ((s1[i] || s2[i]))
 		{
 			if ((unsigned char)s1[i] != (unsigned char)s2[i])
-			{
 				return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-			}
 			i++;
 		}
 	}
@@ -42,9 +40,7 @@ int	ft_strncmp(char *s1, char *s2, int n)
 		while (n > i && (s1[i] || s2[i]))
 		{
 			if ((unsigned char)s1[i] != (unsigned char)s2[i])
-			{
 				return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-			}
 			i++;
 		}
 	}

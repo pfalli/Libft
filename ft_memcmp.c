@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:29:54 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/07 12:02:45 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 16:04:03 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 int	ft_memcmp(const void *str1, const void *str2, int n)
 {
+	int				i;
 	unsigned char	*ptr1;
 	unsigned char	*ptr2;
-	int	i;
 
 	ptr1 = (unsigned char *)str1;
 	ptr2 = (unsigned char *)str2;
@@ -27,7 +27,7 @@ int	ft_memcmp(const void *str1, const void *str2, int n)
 	{
 		if ((unsigned char)ptr1[i] != (unsigned char)ptr2[i])
 		{
-			return ((int) (ptr1[i] - ptr2[i]));
+			return ((int)(ptr1[i] - ptr2[i]));
 		}
 		i++;
 	}
