@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:13:10 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/29 09:55:37 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:39:01 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,13 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-    while (*s != '\0')
+	while (*s != '\0')
 	{
-        if (*s == (char)c)
-            return (char *)s;
-        s++;
-    }
-
-    if (*s == (char)c)
-        return (char *)s;
-
-    return NULL;
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
+	}
+	if (*s == (char)c)
+		return ((char *)s);
+	return (NULL);
 }

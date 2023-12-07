@@ -6,18 +6,17 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 09:47:13 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/28 15:12:30 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:53:36 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
 //	size_t	ft_strlcat(char dst, const char *src, size_t dstsize)
 //	{
 //		size_t len_src = ft_strlen(src);
 //		size_t len_dst = ft_strlen(dst);
-//	
+//
 //		if(len_dst >= len_src)
 //		{
 //			len_dst = len_src;
@@ -37,7 +36,7 @@
 //		}
 //		return (len_dst + len_src);
 //	}
-//	
+//
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

@@ -6,21 +6,23 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:48:06 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/07 10:16:22 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:54:40 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // locate a substring in a big string
 
-// Remember, causing intentional segmentation faults is not good practice in actual programming. 
-//Always ensure that your code handles NULL pointers appropriately to prevent segmentation faults and undefined behavior.
+// Remember, causing intentional segmentation faults is not good practice
+// in actual programming.
+// Always ensure that your code handles NULL pointers appropriately 
+// to prevent segmentation faults and undefined behavior.
 
 #include "libft.h"
 
 //	int	ft_strlen(const char *str)
 //	{
 //		int	x;
-//	
+//
 //		x = 0;
 //		while (str[x] != '\0')
 //		{
@@ -38,7 +40,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	little_len = ft_strlen(little);
 	if (*little == '\0')
 	{
-		return ((char *)big); // Return the pointer to the beginning of big if little is an empty string
+		return ((char *)big);
 	}
 	while (*big != 0 && len >= little_len)
 	{
@@ -49,7 +51,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 				x++;
 			}
 			if (x == little_len)
-				return ((char *)big); // it was missing this part in order to work*****
+				return ((char *)big);
 		}
 		big++;
 		len--;
@@ -59,25 +61,25 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 //	// Test function for ft_strnstr
 //	void test_ft_strnstr(const char *big, const char *little, size_t len) {
-//	    char *result = ft_strnstr(big, little, len);
-//	    if (result != NULL) {
-//	        printf("'%s' found in '%s'\n", little, big);
-//	    } else {
-//	        printf("'%s' not found in '%s'\n", little, big);
-//	    }
+//		 char *result = ft_strnstr(big, little, len);
+//		 if (result != NULL) {
+//		     printf("'%s' found in '%s'\n", little, big);
+//		 } else {
+//		     printf("'%s' not found in '%s'\n", little, big);
+//		 }
 //	}
-//	
+//
 //	int main() {
-//	    const char *str = "lorem ipsum dolor sit amet";
-//	    const char *substring1 = "amet";
-//	    const char *substring2 = "\0"; ///////
-//	    const char *substring3 = "";
-//	
-//	    printf("String: '%s'\n", str);
-//	    
-//	    test_ft_strnstr(str, substring1, 30);  
-//	    test_ft_strnstr(str, substring2, 30);  
-//	    test_ft_strnstr(str, substring3, 30);  
-//	
-//	    return 0;
+//		 const char *str = "lorem ipsum dolor sit amet";
+//		 const char *substring1 = "amet";
+//		 const char *substring2 = "\0"; ///////
+//		 const char *substring3 = "";
+//
+//		 printf("String: '%s'\n", str);
+//
+//		 test_ft_strnstr(str, substring1, 30);
+//		 test_ft_strnstr(str, substring2, 30);
+//		 test_ft_strnstr(str, substring3, 30);
+//
+//		 return (0);
 //	}

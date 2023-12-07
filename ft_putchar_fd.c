@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 11:20:50 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/04 12:35:23 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:57:57 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,25 +20,26 @@ void	ft_putchar_fd(char c, int fd)
 }
 
 //	int main() {
-//		 char character = 'A'; // Character to write
-//		 FILE *file;
+//			char character = 'A'; // Character to write
+//			FILE *file;
 //
-//		
-			// Redirect stdout to a file ("output.txt" will be created or overwritten)
-//		 file = freopen("output.txt", "w", stdout);
-//		 if (file == NULL) {
-//		     perror("Error opening the file");
-//		     return (1);
-//		 }
 //
-//		
-			// Write the character using ft_putchar_fd which will write to the redirected stdout
-//		 ft_putchar_fd(character, STDOUT_FILENO);
+// Redirect stdout to a file ("output.txt" will be created or overwritten)
+//			file = freopen("output.txt", "w", stdout);
+//			if (file == NULL) {
+//			  perror("Error opening the file");
+//			  return (1);
+//			}
 //
-//		 // Close the file
-//		 fclose(file);
 //
-//		 printf("Character '%c' written to the file.\n", character);
+// Write the character using ft_putchar_fd which will write to the 
+// redirected stdout
+//			ft_putchar_fd(character, STDOUT_FILENO);
 //
-//		 return (0);
+//			// Close the file
+//			fclose(file);
+//
+//			printf("Character '%c' written to the file.\n", character);
+//
+//			return (0);
 //	}

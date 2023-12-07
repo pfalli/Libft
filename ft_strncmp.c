@@ -6,21 +6,25 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:57:38 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/06 14:11:54 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:41:14 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// The strcmp() and strncmp() functions lexicographically compare the null-terminated strings s1 and s2.
-// The strncmp() function compares not more than n characters.  Because strncmp() is designed for comparing strings rather than binary
+// The strcmp() and strncmp() functions lexicographically compare the
+// null-terminatedstrings s1 and s2.
+// The strncmp() function compares not more than n characters.
+// Because strncmp() is designed for comparing strings rather than binary
 // data, characters that appear after a `\0' character are not compared.
-// The strcmp() and strncmp() functions return an integer greater than, equal to, 
-// or less than 0, according as the string s1 is greater than, equal to, or less than the string s2. 
+// The strcmp() and strncmp() functions return an integer greater than,
+// equal to,or less than 0, according as the string s1 is greater
+// than, equal to, or less than the string s2.
 
 #include "libft.h"
 
 int	ft_strncmp(char *s1, char *s2, int n)
 {
-	int i;
+	int	i;
+
 	i = 0;
 	if (n < 0)
 	{

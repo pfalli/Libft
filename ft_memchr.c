@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 17:10:53 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/28 17:43:30 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:38:03 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
 
 void	*ft_memchr(const void *memory, int print, size_t n)
 {
-	size_t				x;
+	size_t			x;
 	unsigned char	*ptr;
 	unsigned char	pls;
 
 	x = 0;
 	ptr = (unsigned char *)memory;
-	pls = (unsigned char) print;
+	pls = (unsigned char)print;
 	while (x < n)
 	{
 		if (ptr[x] == pls)
@@ -31,15 +31,14 @@ void	*ft_memchr(const void *memory, int print, size_t n)
 		}
 		x++;
 	}
-	return (NULL); 
+	return (NULL);
 }
-
 
 //	int main()
 //	{
 //		char * str;
-//		
+//
 //		str = ft_memchr("bonjour", 'r', 3);
-//		
+//
 //		printf("result: %s\n", str);
 //	}

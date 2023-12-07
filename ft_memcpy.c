@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 14:49:16 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/06 16:19:50 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:48:55 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dest, const void *src, int n)
 	char	*ptr_dest;
 	char	*ptr_src;
 
-	if (dest == NULL && src == NULL) //&&&&
+	if (dest == NULL && src == NULL)
 		return (NULL);
 	i = 0;
 	ptr_dest = (char *)dest;
@@ -33,7 +33,6 @@ void	*ft_memcpy(void *dest, const void *src, int n)
 	}
 	return (dest);
 }
-
 
 //	int	main(void)
 //	{

@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:46:47 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 11:33:47 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:38:20 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memset(void *memory, int c, int len)
 //
 //#include <stdio.h>
 //
-//int	main(void)
+// int	main(void)
 //{
 //	char memory[] = "Paperone";
 //

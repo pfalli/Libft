@@ -6,12 +6,13 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:28:21 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/06 15:19:07 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:49:10 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // The memmove() function copies len bytes from string src to string dst.
-// The two strings may overlap; the copy is always done in a non-destructive manner.
+// The two strings may overlap; the copy is always done in
+// a non-destructive manner.
 
 #include "libft.h"
 
@@ -47,18 +48,16 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-
-
 //	int	main(void)
 //	{
 //		char memory[] = "Paperone";
 //		char memory2[] = "dhcdhd";
 //		char memory3[] = {65, 66, 67, 68, 69, 0, 45};
 //		char memory4[] = { 0,  0,  0,  0,  0,  0, 0};
-//		
+//
 //		ft_memmove(memory4, memory3 , 7);
-//	
+//
 //		printf("Refilled string: %s\n", memory4);
-//	
+//
 //		return (0);
 //	}

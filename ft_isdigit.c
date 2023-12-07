@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 13:18:20 by pfalli            #+#    #+#             */
-/*   Updated: 2023/11/23 17:18:11 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:38:09 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,14 @@ int	ft_isdigit(int a)
 	}
 }
 
-//	
+//
 //	int	main(void)
 //	{
 //		char	x;
-//	
+//
 //		x = '9';
 //		ft_isdigit(x);
 //		printf("it's alphabet or not %c", x);
 //		return (0);
 //	}
-//	
+//

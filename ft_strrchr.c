@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 16:26:35 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/06 12:36:33 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:41:31 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int	len;
-	char a = c;
+	int		len;
+	char	a;
 
+	a = c;
 	len = 0;
 	while (str[len] != 0)
 	{
@@ -35,14 +36,12 @@ char	*ft_strrchr(const char *str, int c)
 	return (0);
 }
 
-
-
 //	int	main(void)
 //	{
 //		const char *str = "tripouille!";
 //		int targetChar1 = 'o';
 //		int targetChar2 = 't';
-//	
+//
 //		// Test case 1: character found
 //		char *result1 = ft_strrchr(str, targetChar1);
 //		if (result1 != NULL)
@@ -53,7 +52,7 @@ char	*ft_strrchr(const char *str, int c)
 //		{
 //			printf("Character '%c' not found in the string :(\n", targetChar1);
 //		}
-//	
+//
 //		// Test 2:
 //		char *result2 = ft_strrchr(str, targetChar2 + 250);
 //		if (result2 != NULL)

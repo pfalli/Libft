@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 12:53:34 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/07 10:21:57 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:37:46 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,5 @@ void	*ft_calloc(size_t count, size_t size)
 		((char *)arr)[i] = 0;
 		i++;
 	}
-	// return a pointer to the allocated memory
-	return (arr); 
+	return (arr);
 }

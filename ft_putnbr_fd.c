@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 14:09:04 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/04 14:26:03 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:51:15 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	int digit = 0; 
-	
+	int	digit;
+
+	digit = 0;
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);

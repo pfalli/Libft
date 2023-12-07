@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 13:56:48 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/04 14:08:43 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:50:08 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int i = 0;
+	int	i;
 
+	i = 0;
 	while (s[i])
 	{
 		write(fd, &s[i], 1);
