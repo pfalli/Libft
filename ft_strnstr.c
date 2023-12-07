@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 10:48:06 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/06 17:59:02 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/07 10:16:22 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,18 +34,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	little_len;
 	size_t	x;
 
-	if (big == NULL && little == NULL)
-		return NULL;
 	x = 0;
 	little_len = ft_strlen(little);
 	if (*little == '\0')
 	{
 		return ((char *)big); // Return the pointer to the beginning of big if little is an empty string
 	}
-	if (little_len > len) 
-	{
-        return NULL; 
-    }
 	while (*big != 0 && len >= little_len)
 	{
 		if (*big == *little)
