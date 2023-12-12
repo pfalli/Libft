@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 12:26:39 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/07 10:37:27 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/12 09:47:23 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	ft_atoi(const char *str)
 //
 // #include <stdio.h>
 //
-// int	main(void)
+// int	main()
 // {
 // 	char str[] = "12345";
 // 	int x;

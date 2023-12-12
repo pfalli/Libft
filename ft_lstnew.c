@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 13:02:27 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/08 13:04:45 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/12 10:56:06 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,21 +26,12 @@ t_list	*ft_lstnew(void *content)
 
 //	int	main(void)
 //	{
-//		// Creating a new node and assigning content
-//		int value = 42; // Example content
+//		// new node
+//		int value = 42;
 //		t_list *node = ft_lstnew(&value);
 //	
-//		if (node != NULL)
-//		{
-//			printf("New node content: %d\n", *((int *)node->content));
-//				// Accessing the content of the node
-//			free(node);                                               
-//				// Freeing allocated memory
-//		}
-//		else
-//		{
-//			printf("Memory allocation failed.\n");
-//		}
+//		printf("New node content: %d\n", *((int *)node->content));
+//
 //	
 //		return (0);
 //	}

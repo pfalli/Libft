@@ -42,7 +42,8 @@ BONUS =	$(addsuffix .c, \
 				 ft_lstnew \
 				 ft_lstadd_front \
 				 ft_lstsize \
-				 ft_lstlast)
+				 ft_lstlast \
+				 )
 
 OBJS :=	$(SRC:%.c=%.o) #per each .c file will create a .o file
 

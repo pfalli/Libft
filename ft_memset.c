@@ -6,9 +6,16 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:46:47 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/07 10:38:20 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/12 10:37:20 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Refill the string with an int for tot size
+
+// Casting to unsigned char * can be useful in scenarios where you want to 
+// interpret the data pointed to by memory as a sequence of bytes 
+// This casting operation allows the program to access the memory byte by byte, 
+// treating each byte as an unsigned character.
 
 #include "libft.h"
 
