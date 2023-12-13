@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 13:02:27 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/12 10:56:06 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/13 11:30:31 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,13 @@ t_list	*ft_lstnew(void *content)
 	return (new_node);
 }
 
-//	int	main(void)
-//	{
-//		// new node
-//		int value = 42;
-//		t_list *node = ft_lstnew(&value);
-//	
-//		printf("New node content: %d\n", *((int *)node->content));
-//
-//	
-//		return (0);
-//	}
+// int	main(void)
+// {
+// 	// new node
+// 	int value = 42;
+// 	t_list *node = ft_lstnew(&value);
+
+// 	printf("New node content: %d\n", *((int *)node->content));
+
+// 	return (0);
+// }

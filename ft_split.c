@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 11:14:56 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/08 11:11:06 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/13 11:29:40 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include "libft.h"
 
-char	**printing_word(char **split, const char *start, char const *s, int i)
+static char	**pr_word(char **split, const char *start, char const *s, int i)
 {
 	int	j;
 
@@ -29,7 +29,7 @@ char	**printing_word(char **split, const char *start, char const *s, int i)
 	return (split);
 }
 
-int	countwords(char const *s, char c)
+static int	countwords(char const *s, char c)
 {
 	int	count;
 	int	x;
@@ -84,7 +84,7 @@ char	**ft_split(char const *s, char c)
 			split[i] = (char *)malloc(((s - start) + 1) * sizeof(char));
 			if (split[i] == NULL)
 				ft_free(split, i);
-			printing_word(split, start, s, i);
+			pr_word(split, start, s, i);
 			i++;
 		}
 		else

@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 12:43:58 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/07 16:20:35 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/13 11:30:18 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,15 +52,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (dest);
 }
 
-//	int main()
-//	{
-//		char a[]= "voglio";
-//		char b[]= "mangiare";
-//		char *c;
-//
-//		c = ft_strjoin(a, b);
-//
-//		printf("%s\n", c);
-//
-//
-//	}
+	// int main()
+	// {
+	// 	char a[]= "voglio";
+	// 	char b[]= "mangiare";
+	// 	char *c;
+	//
+	// 	c = ft_strjoin(a, b);
+	//
+	// 	printf("%s\n", c);
+	// }
