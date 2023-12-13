@@ -6,7 +6,7 @@
 /*   By: pfalli <pfalli@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 11:14:56 by pfalli            #+#    #+#             */
-/*   Updated: 2023/12/13 11:29:40 by pfalli           ###   ########.fr       */
+/*   Updated: 2023/12/13 12:08:00 by pfalli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ static void	*ft_free(char **strs, int count)
 		i++;
 	}
 	free(strs);
-	return (NULL);
+	return (0);
 }
 
 char	**ft_split(char const *s, char c)
@@ -83,7 +83,7 @@ char	**ft_split(char const *s, char c)
 				s++;
 			split[i] = (char *)malloc(((s - start) + 1) * sizeof(char));
 			if (split[i] == NULL)
-				ft_free(split, i);
+				return (ft_free(split, i));
 			pr_word(split, start, s, i);
 			i++;
 		}
